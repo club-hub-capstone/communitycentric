@@ -85,3 +85,72 @@ a[target="_blank"]:after {
     -webkit-mask-position: center;
     transition: margin .1s ease-in-out,background-color .1s ease-in-out;
 }
+
+/** Timeline - credit: Yohn's Fork */
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.timeline::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    margin-left: -3px;
+    background-color: var(--pico-secondary-background);
+    border-radius: 3px;
+    content: "";
+}
+.timeline>section {
+  position: relative;
+  width: 50%;
+  padding: 10px 25px;
+  background-color: inherit;
+}
+.timeline>.left {
+  left: 0;
+}
+.timeline>.right {
+  left: 50%;
+}
+.timeline>.left::before {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border: medium solid var(--pico-card-sectioning-background-color);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--pico-card-sectioning-background-color);
+  content: " ";
+}
+.timeline>.right::before {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border: medium solid var(--pico-card-sectioning-background-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--pico-card-sectioning-background-color) transparent transparent;
+  content: " ";
+}
+.timeline>::after {
+  z-index: 1;
+  position: absolute;
+  top: 13px;
+  right: -13px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid var(--pico-card-sectioning-background-color);
+  border-radius: 50%;
+  background-color: var(--pico-secondary-background);
+  content: "";
+}
+.timeline>.right::after {
+    left: -13px;
+}
