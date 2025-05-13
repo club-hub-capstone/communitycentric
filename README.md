@@ -4,7 +4,7 @@ This website is statically hosted with Github Pages. Changes to the `main` branc
 
 [communitycentric.org](https://communitycentric.org)
 
-## Dependancies
+## Dependencies
 
 This website was built using the following libraries or tools:
 
@@ -12,6 +12,8 @@ This website was built using the following libraries or tools:
   - Overall styling of the webpage
 - [Yohn's Fork of Pico CSS](https://github.com/Yohn/PicoCSS)
   - Used for the theme-switching icon, timeline, and more
+- [Normalize CSS](https://necolas.github.io/normalize.css)
+  - Used for consistent cross-browser styling
 - [Real Favicon Generator](https://realfavicongenerator.net)
   - Used to generate initial favicons for the website
 
