@@ -2,7 +2,8 @@
 :root {
   --pico-font-family: "Nunito", sans-serif;
 }
-/** Fix anomalies from pico release */
+
+/** Fix inconsistencies in default styling */
 details.dropdown > summary + ul {
   box-shadow: none;
 }
@@ -16,6 +17,9 @@ footer p {
 }
 details.dropdown > summary + ul {
   margin-top: 0.25rem;
+}
+.hero > main > h1, .hero > main > p {
+  width: 100%;
 }
 
 /** Add icon after links pointing to other sites */
