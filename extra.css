@@ -108,14 +108,9 @@ a[target="_blank"]:after {
   width: 50%;
   padding: 10px 25px;
   background-color: inherit;
-}
-.timeline>.left {
   left: 0;
 }
-.timeline>.right {
-  left: 50%;
-}
-.timeline>.left::before {
+.timeline>section::before {
   z-index: 1;
   position: absolute;
   top: 15px;
@@ -125,18 +120,6 @@ a[target="_blank"]:after {
   border: medium solid var(--pico-card-sectioning-background-color);
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent var(--pico-card-sectioning-background-color);
-  content: " ";
-}
-.timeline>.right::before {
-  z-index: 1;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 0;
-  height: 0;
-  border: medium solid var(--pico-card-sectioning-background-color);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent var(--pico-card-sectioning-background-color) transparent transparent;
   content: " ";
 }
 .timeline>::after {
@@ -151,6 +134,37 @@ a[target="_blank"]:after {
   background-color: var(--pico-secondary-background);
   content: "";
 }
-.timeline>.right::after {
+
+/** Only right-align sections on wide screens */
+@media (min-width: 1024px) {
+  .timeline>.right::after {
     left: -13px;
+  }
+  .timeline>.right::before {
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border: medium solid var(--pico-card-sectioning-background-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--pico-card-sectioning-background-color) transparent transparent;
+    content: " ";
+  }
+  .timeline>.right {
+    left: 50%;
+  }
+}
+
+/** Make timeline sections full-width on smaller screens */
+@media (max-width: 1024px) {
+  .timeline>section {
+    width: 100%;
+  }
+  .timeline::after {
+    /** 3px half line width */
+    left: calc(100% - 3px);
+    margin-left: 0;
+  }
 }
