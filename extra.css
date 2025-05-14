@@ -136,7 +136,7 @@ a[target="_blank"]:after {
 }
 
 /** Only right-align sections on wide screens */
-@media (min-width: 1024px) {
+@media (min-aspect-ratio: 1/1) {
   .timeline>.right::after {
     left: -13px;
   }
@@ -158,7 +158,7 @@ a[target="_blank"]:after {
 }
 
 /** Make timeline sections full-width on smaller screens */
-@media (max-width: 1024px) {
+@media (max-aspect-ratio: 1/1) {
   .timeline>section {
     width: 100%;
   }
