@@ -22,4 +22,4 @@ This website was built using the following libraries or tools:
 
 The source code for this website (HTML, CSS, JavaScript) is licensed under the MIT License. You can find a copy of the license in the [LICENSE.md](LICENSE.md) file.
 
-Please note that the MIT License **only** applies to the underlying code of this website. All textual content, articles, images, and other media published on the website are copyrighted by [Your Name/Your Website Name] and are **not** licensed under the MIT License, unless explicitly stated otherwise for specific content. All rights to such content are reserved.
+Please note that the MIT License **only** applies to the underlying code of this website. All textual content, articles, images, and other media published on the website are copyrighted by Community Centric Technologies, LLC and are **not** licensed under the MIT License, unless explicitly stated otherwise for specific content. All rights to such content are reserved.
