@@ -44,7 +44,7 @@ a[target="_blank"]:after {
   height: 100vh;
 }
 .hero main {
-  width: 100vw;
+  width: 100%;
   height: -webkit-fill-available;
   flex: 1;
   display: flex;
