@@ -137,10 +137,10 @@ a[target="_blank"]:after {
 
 /** Only right-align sections on wide screens */
 @media (min-aspect-ratio: 1/1) {
-  .timeline>.right::after {
+  .timeline>section:nth-child(even)::after {
     left: -13px;
   }
-  .timeline>.right::before {
+  .timeline>section:nth-child(even)::before {
     z-index: 1;
     position: absolute;
     top: 15px;
@@ -152,7 +152,7 @@ a[target="_blank"]:after {
     border-color: transparent var(--pico-card-sectioning-background-color) transparent transparent;
     content: " ";
   }
-  .timeline>.right {
+  .timeline>section:nth-child(even) {
     left: 50%;
   }
 }
